@@ -20,7 +20,7 @@ jobs:
     - name: Build, test, tag, and push image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY1: clo835-ecr  
+        ECR_REPOSITORY1: final-ecr  
       run: |
         cd .
         ls -ltra
